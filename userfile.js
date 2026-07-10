@@ -28,8 +28,12 @@ http.createServer((req, resp)=>{
                 let name = cleandata.get('name')
                 let email = cleandata.get('email')
                 resp.write("<h1> Form Submitted. </h1>")
-                resp.write(`<h1>Name : ${name} </h1>`)
-                resp.write(`<h1>Email : ${email} </h1>`)
+                // resp.write(`<h1>Name : ${name} </h1>`)
+                // resp.write(`<h1>Email : ${email} </h1>`)
+                let string = `Name is : ${name}, Email is : ${email}.`
+                fs.writeFileSync("text/"+name+".txt", string)
+                // resp.write(string)
+                console.log("File created.")
                 resp.end()
             })
         }
