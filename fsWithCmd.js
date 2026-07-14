@@ -11,6 +11,8 @@ if (operation == "write"){
     console.log(data)
 }else if(operation == "delete"){
     fs.unlink(`text/${name}.txt`)
+}else if(operation == "update"){
+    fs.appendFileSync(`text/${name}.txt`, content)
 }else {
     console.log("Wrong input.")
 }
