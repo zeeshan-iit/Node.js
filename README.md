@@ -2,7 +2,7 @@
 
 A lightweight, native Node.js backend application built without external frameworks (like Express). This project demonstrates the core fundamentals of Node.js, including setting up an HTTP server, handling streams for incoming data, synchronous and asynchronous file system interactions (`fs`), and a dynamic route loader.
 
-## 🚀 Features Covered
+## 🚀 Features Coverxited
 
 - **Native HTTP Server:** Multi-route serving on a specified port using Node's `http` module.
 
